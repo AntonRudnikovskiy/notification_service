@@ -1,9 +1,6 @@
 package sentinelguard.notification_service.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
@@ -16,7 +13,17 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Builder
 public class Notification {
+
     @Id
+    @SequenceGenerator(
+            name = "notification_id_sequence",
+            sequenceName = "notification_id_sequence",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "notification_id_sequence"
+    )
     private long id;
 
     @Column(name = "message")

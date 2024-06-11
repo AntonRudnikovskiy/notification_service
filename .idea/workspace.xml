@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e346aca-f199-440e-b2fe-374e6600f7e2" name="Changes" comment="removed import">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sentinelguard/notification_service/config/amqp/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sentinelguard/notification_service/config/amqp/RabbitMQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sentinelguard/notification_service/message/consumer/NotificationConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sentinelguard/notification_service/utils/ObjectMapperConfig.java" afterDir="false" />
+    <list default="true" id="2e346aca-f199-440e-b2fe-374e6600f7e2" name="Changes" comment="added message broker RabbitMQ">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sentinelguard/notification_service/service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sentinelguard/notification_service/service/NotificationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717773122767</updated>
-      <workItem from="1717773125761" duration="39548000" />
+      <workItem from="1717773125761" duration="40354000" />
     </task>
     <task id="LOCAL-00001" summary="notification service">
       <created>1717837244350</created>
@@ -115,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717937869387</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added message broker RabbitMQ">
+      <created>1718138818575</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718138818575</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +137,7 @@
     <MESSAGE value="sql" />
     <MESSAGE value="zipkin" />
     <MESSAGE value="removed import" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed import" />
+    <MESSAGE value="added message broker RabbitMQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="added message broker RabbitMQ" />
   </component>
 </project>

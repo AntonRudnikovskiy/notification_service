@@ -3,6 +3,7 @@ package sentinelguard.notification_service.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import sentinelguard.notification_service.dto.CustomerNotificationRequest;
 import sentinelguard.notification_service.entity.Notification;
 import sentinelguard.notification_service.repository.NotificationRepository;
@@ -12,6 +13,8 @@ import sentinelguard.notification_service.repository.NotificationRepository;
 @Slf4j
 public class NotificationService {
     private final NotificationRepository notificationRepository;
+
+    @Transactional
     public void saveNotification(CustomerNotificationRequest request) {
         Notification notification = Notification.builder()
                 .message(request.message())

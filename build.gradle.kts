@@ -2,10 +2,11 @@ plugins {
     java
     id("org.springframework.boot") version "3.1.0"
     id("io.spring.dependency-management") version "1.1.4"
+    id("com.google.cloud.tools.jib") version "3.1.0"
 }
 
 group = "sentinelguard"
-version = "0.0.1-SNAPSHOT"
+version = "0.0.1-NotificationService-SNAPSHOT"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -55,6 +56,7 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok:1.18.26")
     implementation("org.mapstruct:mapstruct:1.5.3.Final")
     annotationProcessor("org.mapstruct:mapstruct-processor:1.5.3.Final")
+    implementation("org.springframework.boot:spring-boot-gradle-plugin:3.1.0")
 
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.13.0")
 
@@ -71,4 +73,21 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.9.2")
     testImplementation("org.assertj:assertj-core:3.24.2")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+}
+
+jib {
+    from {
+        image = "eclipse-temurin:17"
+    }
+    to {
+        image = "docker.io/unkindledone/unkindledone-repository"
+        tags = setOf(project.version.toString())
+        auth {
+            username = findProperty("dockerHubUsername") as String?
+            password = findProperty("dockerHubPassword") as String?
+        }
+    }
+    container {
+        mainClass = "sentinelguard.notification_service.NotificationServiceApplication"
+    }
 }

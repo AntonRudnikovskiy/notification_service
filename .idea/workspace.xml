@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e346aca-f199-440e-b2fe-374e6600f7e2" name="Changes" comment="Transactional">
+    <list default="true" id="2e346aca-f199-440e-b2fe-374e6600f7e2" name="Changes" comment="jib">
       <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-docker.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717773122767</updated>
       <workItem from="1717773125761" duration="43317000" />
-      <workItem from="1718456329474" duration="143000" />
+      <workItem from="1718456329474" duration="3147000" />
     </task>
     <task id="LOCAL-00001" summary="notification service">
       <created>1717837244350</created>
@@ -183,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718139669643</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="jib">
+      <created>1718456558109</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718456558109</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +213,7 @@
     <MESSAGE value="removed import" />
     <MESSAGE value="added message broker RabbitMQ" />
     <MESSAGE value="Transactional" />
-    <option name="LAST_COMMIT_MESSAGE" value="Transactional" />
+    <MESSAGE value="jib" />
+    <option name="LAST_COMMIT_MESSAGE" value="jib" />
   </component>
 </project>
